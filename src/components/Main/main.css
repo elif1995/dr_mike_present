@@ -7,6 +7,13 @@
   align-items:center;
   padding: 10px 30px;
   z-index: 200;
+  
+}
+
+.main-card {
+  display: flex;
+  justify-content: center;
+  width: 99%;
 }
 
 .main-text{
@@ -126,6 +133,7 @@
 .main-boxes{
   display: flex;
   flex-direction: row;
+  
   justify-content:space-evenly;
   width: 100%;
   

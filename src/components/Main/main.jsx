@@ -52,7 +52,7 @@ const Main = () => {
   return (
     <div className="main-container">
       <div className="main">
-        <div>
+        <div className="main-card">
       <Card sx={{borderRadius:'15px'}} className="box-2"><h1>הלבנת שיניים <FontAwesomeIcon style={{backgroundColor:'black',borderRadius:'50px',color:'white',padding:'5px',transform:'translateY(10px)'}} icon={faTooth}></FontAwesomeIcon></h1><h3 style={{color:'white',backgroundColor:'black',padding: '5px', borderRadius:'10px',marginTop:'10px'}}>למה?</h3>
         <ExpandMore
           expand={expanded}
@@ -70,7 +70,7 @@ const Main = () => {
         <br/>
         <br/>
         <br/>
-        <div>
+        <div className="main-card">
       <Card sx={{borderRadius:'15px'}} className="box-2"><h1>הלבנת שיניים <FontAwesomeIcon style={{backgroundColor:'white',borderRadius:'50px',color:'black',padding:'5px',transform:'translateY(10px)'}} icon={faTeethOpen}></FontAwesomeIcon></h1><h3 style={{color:'white',backgroundColor:'black',padding: '5px', borderRadius:'10px',marginTop:'10px'}}>איך?</h3>
         <ExpandMore
           expand={expanded2}
@@ -89,7 +89,7 @@ const Main = () => {
         <br/>
         <br/>
         <br/>
-        <div>
+        <div className="main-card">
       <Card sx={{borderRadius:'15px'}} className="box-2"><h1>הלבנת שיניים  <FontAwesomeIcon style={{backgroundColor:'white',borderRadius:'50px',color:'green',padding:'5px',transform:'translateY(5px)'}} icon={faGift}></FontAwesomeIcon></h1><h3 style={{color:'white',backgroundColor:'black',padding: '5px', borderRadius:'10px',marginTop:'10px'}}>מבצע</h3>
         <ExpandMore
           expand={expanded3}
