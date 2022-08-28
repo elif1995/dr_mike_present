@@ -17,6 +17,11 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import IconButton from '@mui/material/IconButton';
 import Card from '@mui/material/Card';
 import { Typography } from '@mui/material';
+import Button from '@mui/material/Button';
+import Tooltip from '@mui/material/Tooltip';
+
+import { Link, animateScroll as scroll } from 'react-scroll'
+
 
 
 const ExpandMore = styled((props) => {
@@ -60,11 +65,17 @@ const Main = () => {
           aria-expanded={expanded}
           aria-label="show more"
         >
+          <Tooltip title="עוד פרטים">
           <ExpandMoreIcon />
+          </Tooltip>
         </ExpandMore>
           <Collapse in={expanded} timeout="auto" unmountOnExit>
             <Typography>הלבנת שיניים הוא אחד הטיפולים הפופולאריים שמטרתו היא הבהרת השן מכתמים ומגוונים שונים שנוצרו כתוצאה מכמה גורמים: הגורם הראשון קשור למנגנון הזמן והגיל, שכן במרוץ השנים, נשחקת שכבת האמייל ושכבת הדנטין הנמצאות על גבי השן, הן מצהיבות ומכהות את גוון השן. סיבה נוספת תלויה בגורם האנושי וקשורה לסוג המזון שאנו צורכים, מידת השימוש במשקאות עמוסים בקופאין כגון קפה לסוגיו השונים, תה עם קופאין לסוגיו השונים, יינות אדומים, עישון סיגריות וכן, עשויה גם להיגרם מצחצוח שיניים אובססיבי או משימוש במשחת שיניים חזקה מידי ששוחקת את שכבת האמייל.</Typography>
+          <div className="cards-button">
+          <Button variant="contained" color="success"><Link smooth={true}  to="form">השאר פרטים</Link ></Button>
+          </div>
           </Collapse>
+
         </Card>
         </div>
         <br/>
@@ -78,11 +89,16 @@ const Main = () => {
           aria-expanded={expanded2}
           aria-label="show more"
         >
+          <Tooltip title="עוד פרטים">
           <ExpandMoreIcon />
+          </Tooltip>
         </ExpandMore>
           <Collapse in={expanded2} timeout="auto" unmountOnExit>
             <Typography>טיפול הלבנת השיניים מתבצע בכמה דרכים: הדרך הראשונה היא שיטת הלבנה מידית הנעשית אצל רופא השיניים תוך שימוש בחומרים שונים מהולים במי חמצן. מי החמצן מאפשר את חדירת חומרי ההלבנה אל הדנטין דרך הנקבוביות שקיימות בשן ומנקה ומלבין אותה. שיטה נוספת היא שיטת ההלבנה הממושכת (הביתית) בשיטה זו משתמשים בריכוז נמוך יותר של חומרים פעילים ולכן הלבנת שיניים מסוג זה נמשכת בין 7-14 ימים. בהלבנה זו אין צורך בהשגחת רופא צמודה והיא מתבצעת כאשר רופא השיניים מספק למטופל סד לילה העשוי מפלסטיק שקוף ותמיסת הלבנה. את הסד מניח המטופל בין שעה לעשר שעות (בד"כ בלילה) וההלבנה מתבצעת בשלבים. יתרון שיטת הלבנת שיניים זו נעוץ בכך שהמטופל שולט בקצב ההלבנה ובמידת ההלבנה.
 מרפאות המבצעות את הטיפול</Typography>
+<div className="cards-button">
+          <Button variant="contained" color="success"><Link smooth={true}  to="form">השאר פרטים</Link ></Button>
+          </div>
           </Collapse>
         </Card>
         </div>
@@ -97,10 +113,18 @@ const Main = () => {
           aria-expanded={expanded3}
           aria-label="show more"
         >
+
+
+<Tooltip title="עוד פרטים">
+ 
           <ExpandMoreIcon />
+          </Tooltip>
         </ExpandMore>
           <Collapse in={expanded3} timeout="auto" unmountOnExit>
              <h3 style={{color:'green'}}>הסרת אבנית לפני הלבנת שיניים חינם!</h3>
+             <div className="cards-button">
+          <Button variant="contained" color="success"><Link smooth={true}  to="form">השאר פרטים</Link ></Button>
+          </div>
           </Collapse>
         </Card>
         </div>

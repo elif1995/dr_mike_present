@@ -16,6 +16,17 @@
   width: 99%;
 }
 
+.cards-button{
+  display: flex;
+  justify-content:center;
+  padding: 20px 5px
+}
+
+.cards-button a{
+  text-decoration: none;
+  color: #fff
+}
+
 .main-text{
   direction: rtl;
   font-weight: bold;
