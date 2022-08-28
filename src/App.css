@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.leave-message{
+  padding:15px;
   display: flex;
-  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  background-color:#254E58;
+  
+
+}
+
+.leave-message a{
+  
+  padding:15px 20px;
+  border-radius: 8px;
+  background: #254E58;
+  color: #fff;
+  box-shadow:  2px 2px 10px #cccccc53,
+              -2px -2px 10px #ffffff57;
+  border: 5px solid #88BDBC;
+  cursor: pointer;
+  text-decoration: none;
+  
+}
+
+.leave-message a:hover{
+  
+              background: #5d9cac;
+  transition: 0.4s;
+}
+
+.leave-message a:active{
+  box-shadow:none;
+  transition: 0.2s;
+  transform: translateY(2px);
+}
+
+.contact-options{
+  display:flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  background-color:#4F4A41;
+  position:sticky;
+  bottom: 0;
+  z-index: 1200;
+}
+
+.contact-option a{
+  color:#88BDBC;
+  /* border:1px solid ; */
+  border-radius: 5px;
+  height:50px;
+  width:50px;
+  display:flex;
+  justify-content:center;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.contact-option a:hover{
+   border:2px solid #254E58;
+   background-color:white;
+   color:green;
+   padding:10px;
+   transition: 0.6s
+   
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#contact-facebook :hover{
+  color:blue;
+}
+
+.sitelink{
+  background-color:white;
+  height:2vh
 }

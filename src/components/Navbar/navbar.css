@@ -1,0 +1,61 @@
+.navbar{
+  display: flex;
+  flex-direction: row;
+  padding:6px;
+  justify-content: space-evenly;
+  border-bottom: 1px solid grey;
+  gap: 5px
+}
+
+.navbar-phone{
+  background-color:#254E58;
+  padding: 5px;
+  border-radius: 5px;
+  border: 4px solid #88BDBC;
+  font-size:clamp(0.5vh,1.4rem, 4vw);
+  display: flex;
+  justify-content: center;
+  
+}
+
+.navbar-phone a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size:clamp(0.5vh,1.4rem, 4vw);
+
+}
+
+.navbar-phone:hover{
+  background: #5d9cac;
+  transition: 0.4s;
+}
+
+
+
+
+
+.navbar-address{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color:#1f1e1c;
+  font-size:clamp(1.2vh,1.8rem, 5vw);
+  font-weight: 600;
+} 
+
+.navbar-title{
+  text-shadow: 3px 3px 4px rgba(67, 67, 67, 0.123);
+  color: #4F4A41;
+  font-size:clamp(0.4vh,1.4rem, 4vw);
+  display: flex;
+  justify-content:center
+}
+
+@media screen and (max-width: 768px){
+  .navbar{
+    flex-direction: column-reverse;
+  }
+  
+}
