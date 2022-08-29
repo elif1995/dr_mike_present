@@ -58,7 +58,7 @@ const Main = () => {
     <div className="main-container">
       <div className="main">
         <div className="main-card">
-      <Card sx={{borderRadius:'15px'}} className="box-2"><h1>הלבנת שיניים <FontAwesomeIcon style={{borderRadius:'50px',color:'green',padding:'5px',transform:'translateY(10px)'}} icon={faTooth}></FontAwesomeIcon></h1><h3 style={{ borderRadius:'10px',marginTop:'10px', color:'green'}}>למה?</h3>
+      <Card sx={{borderRadius:'15px'}} className="box-2"><h1>הלבנת שיניים <FontAwesomeIcon style={{borderRadius:'50px',color:'green',padding:'5px',transform:'translateY(10px)'}} icon={faTooth}></FontAwesomeIcon></h1><h3 style={{ borderRadius:'10px',marginTop:'10px', color:'green', cursor: 'pointer'}} onClick={handleExpandClick}>למה?</h3>
         <ExpandMore
           expand={expanded}
           onClick={handleExpandClick}
@@ -82,7 +82,7 @@ const Main = () => {
         
         <br/>
         <div className="main-card">
-      <Card sx={{borderRadius:'15px'}} className="box-2"><h1>הלבנת שיניים <FontAwesomeIcon style={{backgroundColor:'white',borderRadius:'50px',color:'green',padding:'5px',transform:'translateY(10px)'}} icon={faTeethOpen}></FontAwesomeIcon></h1><h3 style={{ borderRadius:'10px',marginTop:'10px',color:'green'}}>איך?</h3>
+      <Card sx={{borderRadius:'15px'}} className="box-2"><h1>הלבנת שיניים <FontAwesomeIcon style={{backgroundColor:'white',borderRadius:'50px',color:'green',padding:'5px',transform:'translateY(10px)'}} icon={faTeethOpen}></FontAwesomeIcon></h1><h3 style={{ borderRadius:'10px',marginTop:'10px',color:'green',cursor: 'pointer'}} onClick={handleExpandClick2}>איך?</h3>
         <ExpandMore
           expand={expanded2}
           onClick={handleExpandClick2}
@@ -94,8 +94,7 @@ const Main = () => {
           </Tooltip>
         </ExpandMore>
           <Collapse in={expanded2} timeout="auto" unmountOnExit>
-            <Typography>טיפול הלבנת השיניים מתבצע בכמה דרכים: הדרך הראשונה היא שיטת הלבנה מידית הנעשית אצל רופא השיניים תוך שימוש בחומרים שונים מהולים במי חמצן. מי החמצן מאפשר את חדירת חומרי ההלבנה אל הדנטין דרך הנקבוביות שקיימות בשן ומנקה ומלבין אותה. שיטה נוספת היא שיטת ההלבנה הממושכת (הביתית) בשיטה זו משתמשים בריכוז נמוך יותר של חומרים פעילים ולכן הלבנת שיניים מסוג זה נמשכת בין 7-14 ימים. בהלבנה זו אין צורך בהשגחת רופא צמודה והיא מתבצעת כאשר רופא השיניים מספק למטופל סד לילה העשוי מפלסטיק שקוף ותמיסת הלבנה. את הסד מניח המטופל בין שעה לעשר שעות (בד"כ בלילה) וההלבנה מתבצעת בשלבים. יתרון שיטת הלבנת שיניים זו נעוץ בכך שהמטופל שולט בקצב ההלבנה ובמידת ההלבנה.
-מרפאות המבצעות את הטיפול</Typography>
+            <Typography>טיפול הלבנת השיניים מתבצע בכמה דרכים: הדרך הראשונה היא שיטת הלבנה מידית הנעשית אצל רופא השיניים תוך שימוש בחומרים שונים מהולים במי חמצן. מי החמצן מאפשר את חדירת חומרי ההלבנה אל הדנטין דרך הנקבוביות שקיימות בשן ומנקה ומלבין אותה. שיטה נוספת היא שיטת ההלבנה הממושכת (הביתית) בשיטה זו משתמשים בריכוז נמוך יותר של חומרים פעילים ולכן הלבנת שיניים מסוג זה נמשכת בין 7-14 ימים. בהלבנה זו אין צורך בהשגחת רופא צמודה והיא מתבצעת כאשר רופא השיניים מספק למטופל סד לילה העשוי מפלסטיק שקוף ותמיסת הלבנה. את הסד מניח המטופל בין שעה לעשר שעות (בד"כ בלילה) וההלבנה מתבצעת בשלבים. יתרון שיטת הלבנת שיניים זו נעוץ בכך שהמטופל שולט בקצב ההלבנה ובמידת ההלבנה.</Typography>
 <div className="cards-button">
           <Button variant="contained" color="success"><Link smooth={true}  to="form">השאר פרטים</Link ></Button>
           </div>
@@ -105,7 +104,7 @@ const Main = () => {
         
         <br/>
         <div className="main-card">
-      <Card sx={{borderRadius:'15px'}} className="box-2"><h1>הלבנת שיניים  <FontAwesomeIcon style={{backgroundColor:'white',borderRadius:'50px',color:'green',padding:'5px',transform:'translateY(5px)'}} icon={faGift}></FontAwesomeIcon></h1><h3 style={{color:'green', borderRadius:'10px',marginTop:'10px'}}>מבצע!</h3>
+      <Card sx={{borderRadius:'15px'}} className="box-2"><h1>הלבנת שיניים  <FontAwesomeIcon style={{backgroundColor:'white',borderRadius:'50px',color:'green',padding:'5px',transform:'translateY(5px)'}} icon={faGift}></FontAwesomeIcon></h1><h3 style={{color:'green', borderRadius:'10px',marginTop:'10px', cursor: 'pointer'}} onClick={handleExpandClick3}>מבצע!</h3>
         <ExpandMore
           expand={expanded3}
           onClick={handleExpandClick3}
