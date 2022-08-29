@@ -58,7 +58,7 @@ const Main = () => {
     <div className="main-container">
       <div className="main">
         <div className="main-card">
-      <Card sx={{borderRadius:'15px'}} className="box-2"><h1>הלבנת שיניים <FontAwesomeIcon style={{borderRadius:'50px',color:'#88BDBC',padding:'5px',transform:'translateY(10px)'}} icon={faTooth}></FontAwesomeIcon></h1><h3 style={{ borderRadius:'10px',marginTop:'10px'}}>למה?</h3>
+      <Card sx={{borderRadius:'15px'}} className="box-2"><h1>הלבנת שיניים <FontAwesomeIcon style={{borderRadius:'50px',color:'green',padding:'5px',transform:'translateY(10px)'}} icon={faTooth}></FontAwesomeIcon></h1><h3 style={{ borderRadius:'10px',marginTop:'10px', color:'green'}}>למה?</h3>
         <ExpandMore
           expand={expanded}
           onClick={handleExpandClick}
@@ -82,7 +82,7 @@ const Main = () => {
         
         <br/>
         <div className="main-card">
-      <Card sx={{borderRadius:'15px'}} className="box-2"><h1>הלבנת שיניים <FontAwesomeIcon style={{backgroundColor:'white',borderRadius:'50px',color:'#88BDBC',padding:'5px',transform:'translateY(10px)'}} icon={faTeethOpen}></FontAwesomeIcon></h1><h3 style={{ borderRadius:'10px',marginTop:'10px'}}>איך?</h3>
+      <Card sx={{borderRadius:'15px'}} className="box-2"><h1>הלבנת שיניים <FontAwesomeIcon style={{backgroundColor:'white',borderRadius:'50px',color:'green',padding:'5px',transform:'translateY(10px)'}} icon={faTeethOpen}></FontAwesomeIcon></h1><h3 style={{ borderRadius:'10px',marginTop:'10px',color:'green'}}>איך?</h3>
         <ExpandMore
           expand={expanded2}
           onClick={handleExpandClick2}
