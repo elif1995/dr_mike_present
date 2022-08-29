@@ -4,6 +4,56 @@
   padding: 0;
 }
 
+
+.loading-page{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  height: 100vh;
+}
+
+.loading-page .loading-logo{
+  animation: loadingLogo 2s linear infinite;
+}
+
+.loading-circle{
+  height: 200px;
+  width: 200px;
+
+  background:transparent;
+  position: absolute;
+  border-radius: 250px;
+  border: 3px solid lightblue;
+  border-style: none solid none none;
+  animation:rotate 1s linear infinite;
+
+}
+
+@keyframes rotate {
+  0%{
+    transform: rotateZ(0)
+  }
+  50%{
+    transform: rotateZ(180deg)
+  }
+  100%{
+    transform: rotateZ(360deg)
+  }
+}
+
+
+@keyframes loadingLogo {
+  0%{
+    opacity:1
+  }
+  50%{
+    opacity:0.4
+  }
+  100%{
+    opacity:1
+  }
+}
+
 .leave-message{
   padding:15px;
   display: flex;
