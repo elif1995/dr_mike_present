@@ -58,7 +58,7 @@ const Main = () => {
     <div className="main-container">
       <div className="main">
         <div className="main-card">
-      <Card sx={{borderRadius:'15px'}} className="box-2"><h1>הלבנת שיניים <FontAwesomeIcon style={{backgroundColor:'black',borderRadius:'50px',color:'white',padding:'5px',transform:'translateY(10px)'}} icon={faTooth}></FontAwesomeIcon></h1><h3 style={{color:'white',backgroundColor:'black',padding: '5px', borderRadius:'10px',marginTop:'10px'}}>למה?</h3>
+      <Card sx={{borderRadius:'15px'}} className="box-2"><h1>הלבנת שיניים <FontAwesomeIcon style={{borderRadius:'50px',color:'#88BDBC',padding:'5px',transform:'translateY(10px)'}} icon={faTooth}></FontAwesomeIcon></h1><h3 style={{ borderRadius:'10px',marginTop:'10px'}}>למה?</h3>
         <ExpandMore
           expand={expanded}
           onClick={handleExpandClick}
@@ -78,11 +78,11 @@ const Main = () => {
 
         </Card>
         </div>
-        <br/>
-        <br/>
+        
+        
         <br/>
         <div className="main-card">
-      <Card sx={{borderRadius:'15px'}} className="box-2"><h1>הלבנת שיניים <FontAwesomeIcon style={{backgroundColor:'white',borderRadius:'50px',color:'black',padding:'5px',transform:'translateY(10px)'}} icon={faTeethOpen}></FontAwesomeIcon></h1><h3 style={{color:'white',backgroundColor:'black',padding: '5px', borderRadius:'10px',marginTop:'10px'}}>איך?</h3>
+      <Card sx={{borderRadius:'15px'}} className="box-2"><h1>הלבנת שיניים <FontAwesomeIcon style={{backgroundColor:'white',borderRadius:'50px',color:'#88BDBC',padding:'5px',transform:'translateY(10px)'}} icon={faTeethOpen}></FontAwesomeIcon></h1><h3 style={{ borderRadius:'10px',marginTop:'10px'}}>איך?</h3>
         <ExpandMore
           expand={expanded2}
           onClick={handleExpandClick2}
@@ -102,11 +102,10 @@ const Main = () => {
           </Collapse>
         </Card>
         </div>
-        <br/>
-        <br/>
+        
         <br/>
         <div className="main-card">
-      <Card sx={{borderRadius:'15px'}} className="box-2"><h1>הלבנת שיניים  <FontAwesomeIcon style={{backgroundColor:'white',borderRadius:'50px',color:'green',padding:'5px',transform:'translateY(5px)'}} icon={faGift}></FontAwesomeIcon></h1><h3 style={{color:'white',backgroundColor:'black',padding: '5px', borderRadius:'10px',marginTop:'10px'}}>מבצע</h3>
+      <Card sx={{borderRadius:'15px'}} className="box-2"><h1>הלבנת שיניים  <FontAwesomeIcon style={{backgroundColor:'white',borderRadius:'50px',color:'green',padding:'5px',transform:'translateY(5px)'}} icon={faGift}></FontAwesomeIcon></h1><h3 style={{color:'green', borderRadius:'10px',marginTop:'10px'}}>מבצע!</h3>
         <ExpandMore
           expand={expanded3}
           onClick={handleExpandClick3}
@@ -121,13 +120,15 @@ const Main = () => {
           </Tooltip>
         </ExpandMore>
           <Collapse in={expanded3} timeout="auto" unmountOnExit>
-             <h3 style={{color:'green'}}>הסרת אבנית לפני הלבנת שיניים חינם!</h3>
+             <h4 style={{color:'green'}}>הסרת אבנית לפני הלבנת שיניים חינם!</h4>
              <div className="cards-button">
           <Button variant="contained" color="success"><Link smooth={true}  to="form">השאר פרטים</Link ></Button>
           </div>
           </Collapse>
         </Card>
+
         </div>
+        
       {/* <div className="main-text">
         <h1>הלבנת שיניים</h1>
         <p>
@@ -145,13 +146,14 @@ const Main = () => {
         </p>
       </div> */}
       </div>
+      
       <div className="main-bottom">
       <svg className="main-line" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path fill="#254E58" fill-opacity="1" d="M0,224L1440,0L1440,0L0,0Z"></path>
       </svg>
       <div className="main-boxes">
-        <div className="main-box"><p className="img-desc">לחץ על התמונה</p><img src={person1} /><img src={person2} className="top-img" /></div>
-        <div className="main-box"><p className="img-desc">לחץ על התמונה</p><img src={person5} /><img src={person6} className="top-img" /></div>
+        <div className="main-box"><p className="img-desc">לחץ על התמונה</p><img src={person1}  /><img src={person2} className="top-img" /></div>
+        <div className="main-box"><p className="img-desc">לחץ על התמונה</p><img src={person5}  /><img src={person6} className="top-img" /></div>
       </div>
       </div>
       <div className="footer">

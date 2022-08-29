@@ -5,15 +5,30 @@
   flex-direction: row;
   justify-content:space-around;
   align-items:center;
-  padding: 10px 30px;
+  padding: 10px 10px;
   z-index: 200;
+  
   
 }
 
 .main-card {
   display: flex;
   justify-content: center;
+  
   width: 99%;
+}
+
+.main-card h3{
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  box-shadow:  4px 4px 8px #70707085,
+             -4px -4px 8px #ffffff;
+  padding: 5px 10px;           
+
+}
+
+.main-card h1{
+  color: #88BDBC;
+  
 }
 
 .cards-button{
@@ -147,7 +162,7 @@
   
   justify-content:space-evenly;
   width: 100%;
-  
+  margin-top: -50px
 }
 
 .main-box{
@@ -167,6 +182,7 @@
   height: 100%;
   position: absolute;
   border-radius: 8px;
+  
 }
 
 .top-img{
