@@ -166,8 +166,8 @@
 }
 
 .main-box{
-  min-height: clamp(18vw,12rem,40vw);
-  width: clamp(20vw,12rem,40vw);
+  min-height: clamp(16vw,11rem,32vw);
+  width: clamp(28vw,17rem,44vw);
   border-radius: 12px;
   background: transparent ;
   box-shadow:  8px 8px 44px #cccccc2e,
