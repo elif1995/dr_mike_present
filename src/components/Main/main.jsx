@@ -163,14 +163,14 @@ const Main = () => {
               className="main-form" 
               name="contact v1"
               method="post"
-              data-netlify="true"
+              netlify
               onSubmit='submit'
               >
                 <input type="hidden" name="form-name" value="contact v1"/>
           <h2>שם</h2>
           <input type='text' name="שם"/>
           <h2>טלפון</h2>
-          <input type='email' name="email"/>
+          <input type='phone' name="פאלפון"/>
 
           <button type="submit" > שלח/י</button>
         </form>
