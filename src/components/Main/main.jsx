@@ -163,15 +163,18 @@ const Main = () => {
               className="main-form" 
               name="contact v1"
               method="post"
-              netlify
+              data-netlify="true"
               onSubmit='submit'
               >
                 <input type="hidden" name="form-name" value="contact v1"/>
-          <h2>שם</h2>
-          <input type='text' name="שם"/>
-          <h2>טלפון</h2>
-          <input type='phone' name="פאלפון"/>
-
+            <h2>
+          <lable>שם: <br/>
+          <input type='text' name="שם"/></lable>
+            </h2>
+            <h2>
+          <label>פאלפון: <br/>
+          <input type='phone' name="פאלפון"/></label>
+            </h2>
           <button type="submit" > שלח/י</button>
         </form>
         </div>
