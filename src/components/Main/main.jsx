@@ -165,7 +165,7 @@ const Main = () => {
               method="post"
               data-netlify="true"
               onSubmit='submit'
-              action="/success/"
+              
               >
                 <input type="hidden" name="form-name" value="contact v1"/>
           <h2>שם</h2> 
