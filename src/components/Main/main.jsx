@@ -170,7 +170,7 @@ const Main = () => {
                 <input type="hidden" name="form-name" value="contact v1"/>
           <h2>שם</h2> 
           <input type='text' name="name" required/>
-          <h2>פאלפון</h2>
+          <h2>טלפון</h2>
           <input type='phone' name="phone" required/>
             
           <button type="submit" > שלח/י</button>

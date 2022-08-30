@@ -5,6 +5,25 @@
 }
 
 
+.arrows-down{
+  height:40px;
+  width: 40px;
+  position: fixed;
+  top:80vh;
+  right: 30px;
+  background-color:rgb(172, 171, 171);
+  border-radius: 50px;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  z-index: 100;
+}
+
+.arrows-down:hover{
+  opacity:0.8;
+}
+
+
 .loading-page{
   display: flex;
   justify-content:center;

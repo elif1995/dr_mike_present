@@ -5,14 +5,17 @@ import Main from './components/Main/main.jsx';
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook ,faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import {  faPhone} from '@fortawesome/free-solid-svg-icons';
+import {  faAngleDown, faAnglesDown, faArrowDown, faPhone} from '@fortawesome/free-solid-svg-icons';
 import Logo from './images/logo.jpg'
-
+import { Link, animateScroll as scroll } from 'react-scroll'
+import {useWindowScroll} from 'react-use';
 
 
 
 function App() {
+  const {y: pageYOffset} = useWindowScroll()
   const [isLoading, setIsLoading] = useState(false);
+  const [showArrow, setShowArrow] = useState(true);
   
   useEffect(() => {
     setIsLoading(true);
@@ -20,6 +23,16 @@ function App() {
       setIsLoading(false)
     },1500)
   },[])
+
+
+
+  useEffect(() => {
+    if(pageYOffset < 550){
+      setShowArrow(true)
+    }else{
+      setShowArrow(false)
+    }
+  },[pageYOffset])
   
   return (
     <div className="App">
@@ -32,8 +45,13 @@ function App() {
       <Header />
       {/* <div className="leave-message">
       <a className="leave-message" href="#form"><h2>השאירו פרטים</h2></a>
-      </div> */}
+    </div> */}
       <Main />
+      {showArrow && <Link to="form" smooth={true}>
+        <div className="arrows-down">
+        <FontAwesomeIcon  icon={faAnglesDown}></FontAwesomeIcon>
+        </div>
+      </Link>}
       <div className="contact-options">
         
         <div className="contact-option fa-2x"><a href="https://wa.me/545354747"><FontAwesomeIcon icon={faWhatsapp}></FontAwesomeIcon></a></div>
