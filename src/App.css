@@ -9,14 +9,15 @@
   height:40px;
   width: 40px;
   position: fixed;
-  top:80vh;
-  right: 30px;
-  background-color:rgb(172, 171, 171);
+  top:75vh;
+  right: 20px;
+  background-color:rgb(220, 219, 219);
   border-radius: 50px;
   display: flex;
   justify-content:center;
   align-items:center;
   z-index: 100;
+  opacity:0.7;
 }
 
 .arrows-down:hover{
