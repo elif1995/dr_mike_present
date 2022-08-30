@@ -159,11 +159,18 @@ const Main = () => {
       <div className="main-send-message">
         <div>
         <h1 className="form-title">השאירו פרטים ונחזור אליכם</h1>
-        <form id="form" className="main-form">
+        <form id="form" 
+              className="main-form" 
+              name="contact v1"
+              method="post"
+              data-netlify="true"
+              onSubmit='submit'
+              >
+                <input type="hidden" name="form-name" value="contact v1"/>
           <h2>שם</h2>
-          <input/>
+          <input type='text' name="שם"/>
           <h2>טלפון</h2>
-          <input/>
+          <input type='email' name="email"/>
 
           <button type="submit" > שלח/י</button>
         </form>
