@@ -216,7 +216,7 @@
   transform:translateX(-50%) ;
   color: #fff;
   z-index: 3;
-  font-size:clamp(2.8vh,1.8rem, 2.2vw);
+  font-size:clamp(2.6vh,1.8rem, 2.2vw);
   width:100%;
   border-radius: 10px;
   text-align: center;

@@ -112,6 +112,7 @@
 
 
 
+
 @media  all and (min-width:1400px){
   .header{
     min-height:30vh
@@ -132,7 +133,7 @@
 
 @media  (orientation: landscape) {
   .header{
-    height:40vh
+    height:50vh
   }
 
   .box-2{

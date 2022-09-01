@@ -2,12 +2,11 @@ import './main.css'
 import React from 'react'
 import person1 from '../../images/befor-person-1.jpeg'
 import person2 from '../../images/after-person-1.jpeg';
-import person3 from '../../images/photo-1.jpg'
-import person4 from '../../images/photo-2.jpg';
+
 import person5 from '../../images/befor-person-2.jpeg'
 import person6 from '../../images/after-person-2.jpeg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSmile, faGift, faTooth, faTeethOpen} from '@fortawesome/free-solid-svg-icons'
+import {  faGift, faTooth, faTeethOpen} from '@fortawesome/free-solid-svg-icons'
 
 
 
@@ -20,7 +19,7 @@ import { Typography } from '@mui/material';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 
-import { Link, animateScroll as scroll } from 'react-scroll'
+import { Link,  } from 'react-scroll'
 
 
 
@@ -127,23 +126,7 @@ const Main = () => {
         </Card>
 
         </div>
-        
-      {/* <div className="main-text">
-        <h1>הלבנת שיניים</h1>
-        <p>
-                    הלבנת שיניים אצל דר מייק פרנקין ב ל ב ד!
-            הלבנת שיניים ב-3 שיטות לבחירה!
-            תכשירים גרמניים איכותיים עם תוצאות מרשימות!
-            במחירים שאת לא רוצה לפספס 
-            <br/>
-            1 – הלבנה תוך 40 דק' במרפאה אצל ד"ר פרנקין
-            <br/>
-            2 – הלבנה עם סד, לשימוש בבית במשך 7-14 ימים
-            <br/>
-            3-חדש-חדש-חדש-מדבקות מלבינות את השיניים
-
-        </p>
-      </div> */}
+      
       </div>
       
       <div className="main-bottom">
@@ -151,8 +134,8 @@ const Main = () => {
         <path fill="#254E58" fill-opacity="1" d="M0,224L1440,0L1440,0L0,0Z"></path>
       </svg>
       <div className="main-boxes">
-        <div className="main-box"><p className="img-desc">לחץ על התמונה</p><img src={person1}  /><img src={person2} className="top-img" /></div>
-        <div className="main-box"><p className="img-desc">לחץ על התמונה</p><img src={person5}  /><img src={person6} className="top-img" /></div>
+        <div className="main-box"><p className="img-desc">לחץ על התמונה</p><img src={person1} alt="before" /><img src={person2} alt="after" className="top-img" /></div>
+        <div className="main-box"><p className="img-desc">לחץ על התמונה</p><img src={person5} alt="before" /><img src={person6} alt="after" className="top-img" /></div>
       </div>
       </div>
       <div className="footer">

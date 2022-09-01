@@ -16,7 +16,7 @@ const Navbar = () => {
         <h5> שאול טשרניחובסקי 67, רחובות </h5> 
       </div>
       <div className="navbar-title">
-        <h2><img src={Logo} height={50} />  </h2>
+        <h2><a href="https://www.facebook.com/DrMikeFrenkin"><img alt='logo' src={Logo} height={50} /></a>  </h2>
       </div>
     </div>
   )

@@ -51,7 +51,8 @@
   color: #4F4A41;
   font-size:clamp(0.4vh,1.4rem, 4vw);
   display: flex;
-  justify-content:center
+  justify-content:center;
+  align-items: center;
 }
 
 @media screen and (max-width: 768px){

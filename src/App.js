@@ -4,10 +4,10 @@ import Header from './components/Header/header.jsx';
 import Main from './components/Main/main.jsx';
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook ,faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import {  faAngleDown, faAnglesDown, faArrowDown, faPhone} from '@fortawesome/free-solid-svg-icons';
+import { faFacebook ,faLinkedin,faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import {   faAnglesDown, faPhone} from '@fortawesome/free-solid-svg-icons';
 import Logo from './images/logo.jpg'
-import { Link, animateScroll as scroll } from 'react-scroll'
+import { Link,  } from 'react-scroll'
 import {useWindowScroll} from 'react-use';
 
 
@@ -37,15 +37,13 @@ function App() {
   return (
     <div className="App">
       
-      {isLoading ? (<div className="loading-page"><img className="loading-logo" src={Logo} height="140" width="140"/><div className="loading-circle"></div></div >):
+      {isLoading ? (<div className="loading-page"><img className="loading-logo" src={Logo} alt="logo" height="140" width="140"/><div className="loading-circle"></div></div >):
 
       (<>
       <Navbar />
       
       <Header />
-      {/* <div className="leave-message">
-      <a className="leave-message" href="#form"><h2>השאירו פרטים</h2></a>
-    </div> */}
+      
       <Main />
       {showArrow && <Link to="form" smooth={true}>
         <div className="arrows-down">
@@ -58,7 +56,11 @@ function App() {
         <div className="contact-option fa-2x" id="contact-facebook"><a href="https://www.facebook.com/DrMikeFrenkin"><FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon></a></div>
         <div className="contact-option fa-2x"><a href="tel:08-9353339"><FontAwesomeIcon icon={faPhone}></FontAwesomeIcon></a></div>
       </div>
-      </>)
+      <div className="copyright"> <h5>	&copy; Made By Eli Frenkin  <a  href="https://www.linkedin.com/in/eli-frenkin-6a75b4215/"><FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon></a> </h5></div>
+      </>
+      
+      )
+
     }
     </div>
   );

@@ -149,3 +149,17 @@
   background-color:white;
   height:2vh
 }
+
+.copyright{
+  display:flex;
+  justify-content:center;
+  padding: 5px;
+  background-color:#4F4A41;
+  color:white;
+  
+}
+
+.copyright a{
+  text-decoration:none;
+  color:white;
+}
